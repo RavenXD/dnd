@@ -1,0 +1,21 @@
+---
+import "@fontsource/prompt";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/footer/Footer.astro";
+import "../base.css";
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Digital & Designs</title>
+  </head>
+  <body class="w-full h-full bg-dd-main-bg relative">
+    <Nav />
+    <slot />
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import hero from "../../src/images/hero.jpg";
+import { Icon } from "astro-icon/components";
+import Skils from "../components/landing-page/Skils.astro";
+import Services from "../components/landing-page/services/Services.astro";
+import Stats from "../components/landing-page/Stats.astro";
+import Portfolio from "../components/landing-page/portfolio/Portfolio.astro";
+import Feedback from "../components/landing-page/Feedback.astro";
+import Team from "../components/landing-page/team/Team.astro";
+import LogoSlider from "../components/react/LogoSlider";
+import SocialSlider from "../components/react/SocialSlider";
+---
+
+<MainLayout>
+  <section
+    class="ml-16 min-[1600px]:ml-32 flex h-screen relative overflow-hidden"
+  >
+    <div class="flex flex-1 mt-48 min-[1600px]:mt-72 gap-x-20">
+      <div class="social-icons flex flex-col gap-16">
+        <Icon
+          name="basil:facebook-outline"
+          class="text-dd-grey hover:text-dd-primary"
+          size={40}
+        />
+        <Icon
+          name="basil:instagram-outline"
+          class="text-dd-grey hover:text-dd-primary"
+          size={40}
+        />
+        <Icon
+          name="basil:twitter-outline"
+          class="text-dd-grey hover:text-dd-primary"
+          size={40}
+        />
+        <Icon
+          name="basil:pinterest-outline"
+          class="text-dd-grey hover:text-dd-primary"
+          size={40}
+        />
+      </div>
+      <div class="hero-text-header flex flex-col gap-2">
+        <div class="flex gap-x-4 items-center">
+          <div class="w-10 h-[2px] bg-dd-grey"></div>
+          <div class="size-3 rounded-full bg-dd-primary"></div>
+          <h3 class="text-dd-grey text-3xl">Innovative Ideas</h3>
+        </div>
+        <div class="hero-text-body mt-5 max-w-xl">
+          <div class="text-5xl text-white font-semibold">
+            <h1>
+              Think. Create. <span class="text-dd-primary">Execute.</span>
+            </h1>
+            <h1 class="flex flex-col items-baseline mt-2">
+              We Are With You
+              <span class="text-dd-primary pr-4">At Every Step</span>
+            </h1>
+          </div>
+          <p class="text-dd-text-grey mt-14">
+            We provide a wide range of services that will take your business to
+            the next level in the digital landscape. From Social Media to
+            Business Analytics, and everything in between, we've got you
+            covered.
+          </p>
+        </div>
+        <div class="hero-text-footer mt-16 flex gap-x-2 items-center">
+          <div class="w-10 h-[2px] bg-dd-text-grey"></div>
+          <div class="bg-white size-2 rounded-full ml-3"></div>
+          <p class="text-white hover:text-dd-primary">Get Started</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1"></div>
+    <Image
+      src={hero}
+      alt="hero image"
+      class="absolute -z-10 top-0 right-0 w-3/5 animate-img-bounce"
+    />
+  </section>
+
+  <Skils />
+  <Services />
+  <Stats />
+  <Portfolio />
+  <LogoSlider client:only="react" />
+  <Feedback />
+  <Team />
+  <SocialSlider client:only="react" />
+</MainLayout>

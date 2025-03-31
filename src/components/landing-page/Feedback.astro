@@ -1,0 +1,108 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import client1 from "../../images/clients/client1.png";
+import client2 from "../../images/clients/client2.png";
+import client3 from "../../images/clients/client3.png";
+---
+
+<section
+  class="min-[1600px]:mx-32 mx-16 flex flex-col justify-between text-white mt-32 mb-32"
+>
+  <header class="flex flex-col w-full items-center">
+    <div class="flex w-full gap-x-4 items-center justify-center">
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <h3 class="text-dd-grey text-3xl">Client Feedback</h3>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+    </div>
+    <h3 class="text-6xl mt-8 font-semibold">Hear It From Our Clients</h3>
+  </header>
+  <main class="flex w-full justify-between gap-10 mt-16">
+    <div class="flex flex-col flex-1">
+      <div class="flex justify-between m-6">
+        <Icon name="ph:quotes-fill" class="text-dd-primary" size={24} />
+        <div class="flex">
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-dd-grey" size={24} />
+          <Icon name="material-symbols:star" class="text-dd-grey" size={24} />
+        </div>
+      </div>
+
+      <div class="w-full p-24 bg-dd-section-bg">
+        Arcu bibendum at varius vel pharetra vel turpis. Sed enim ut sem viverra
+        aliquet. Duis ut diam quam nulla porttitor massa id neque aliquam. Eget
+        mi proin sed libero enim sed faucibus turpis.
+      </div>
+      <div class="flex ml-16 -mt-6 items-center gap-10">
+        <Image
+          src={client1}
+          alt="client pic"
+          class="bg-dd-primary rounded-full"
+        />
+        <p class="text-dd-primary">
+          Thomas - <span class="text-dd-grey">Designer</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col flex-1">
+      <div class="flex justify-between m-6">
+        <Icon name="ph:quotes-fill" class="text-dd-primary" size={24} />
+        <div class="flex">
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-dd-grey" size={24} />
+          <Icon name="material-symbols:star" class="text-dd-grey" size={24} />
+        </div>
+      </div>
+      <div class="w-full p-24 bg-dd-section-bg">
+        Arcu bibendum at varius vel pharetra vel turpis. Sed enim ut sem viverra
+        aliquet. Duis ut diam quam nulla porttitor massa id neque aliquam. Eget
+        mi proin sed libero enim sed faucibus turpis.
+      </div>
+      <div class="flex ml-16 -mt-6 items-center gap-10">
+        <Image
+          src={client2}
+          alt="client pic"
+          class="bg-dd-primary rounded-full"
+        />
+        <p class="text-dd-primary">
+          Thomas - <span class="text-dd-grey">Designer</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col flex-1">
+      <div class="flex justify-between m-6">
+        <Icon name="ph:quotes-fill" class="text-dd-primary" size={24} />
+        <div class="flex">
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-white" size={24} />
+          <Icon name="material-symbols:star" class="text-dd-grey" size={24} />
+          <Icon name="material-symbols:star" class="text-dd-grey" size={24} />
+        </div>
+      </div>
+      <div class="w-full p-24 bg-dd-section-bg">
+        Arcu bibendum at varius vel pharetra vel turpis. Sed enim ut sem viverra
+        aliquet. Duis ut diam quam nulla porttitor massa id neque aliquam. Eget
+        mi proin sed libero enim sed faucibus turpis.
+      </div>
+      <div class="flex ml-16 -mt-6 items-center gap-10">
+        <Image
+          src={client3}
+          alt="client pic"
+          class="bg-dd-primary rounded-full"
+        />
+        <p class="text-dd-primary">
+          Thomas - <span class="text-dd-grey">Designer</span>
+        </p>
+      </div>
+    </div>
+  </main>
+</section>

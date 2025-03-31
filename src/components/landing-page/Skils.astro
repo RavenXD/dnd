@@ -1,0 +1,40 @@
+---
+import { Icon } from "astro-icon/components";
+
+const skills = [
+  {
+    title: "Think",
+    icon: "iconoir:brain",
+    body: "We help to create a Marketing strategy and ideas that help your brand stand out.",
+  },
+  {
+    title: "Create",
+    icon: "iconoir:tools",
+    body: "Our expertise in creating stunning visuals and engaging video content will make your business appealing to large audiences.",
+  },
+  {
+    title: "Execute",
+    icon: "iconoir:rocket",
+    body: "Content rollout and digital advertising strategies help create a lasting impact. Our team ensures strategy execution brings results.",
+  },
+];
+---
+
+<section
+  class="min-[1600px]:mx-56 mx-16 flex justify-between min-[1600px]:mt-16 mt-32 mb-32"
+>
+  {
+    skills.map((skill) => (
+      <div class="card flex gap-x-3 ">
+        <div />
+        <Icon name={skill.icon} class="text-dd-primary" size={80} />
+
+        <div class="text-white w-72">
+          <h3 class="text-2xl font-semibold">{skill.title}</h3>
+          <p class="text-dd-grey mt-4">{skill.body}</p>
+        </div>
+      </div>
+    ))
+  }
+  <div id="services"></div>
+</section>

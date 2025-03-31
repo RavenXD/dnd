@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+const { src, basis } = Astro.props;
+---
+
+<div class=`relative group overflow-hidden ${basis}`>
+  <Image src={src} alt="img1" class="size-full object-cover" />
+  <div class="size-full text-white">
+    <div
+      class="absolute backdrop-blur -bottom-full p-4 w-full flex items-end transition-all duration-500 group-hover:bottom-0 bg-black bg-opacity-60"
+    >
+      <slot />
+    </div>
+  </div>
+</div>

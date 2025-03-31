@@ -1,0 +1,72 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import img1 from "../../images/services/img1.png";
+import { Image } from "astro:assets";
+---
+
+<MainLayout title="Business Analysis">
+  <div
+    class="bg-detail-img bg-no-repeat h-96 w-full absolute top-0 grayscale -z-40"
+  >
+    <div class="bg-black bg-opacity-80 w-full h-full"></div>
+  </div>
+  <section class="mx-16 min-[1600px]:ml-32 flex text-white">
+    <div class="mt-48 min-[1600px]:mt-72 gap-x-20">
+      <header class="flex flex-col w-full items-center mb-72">
+        <h2 class="text-5xl font-semibold">Business Analysis</h2>
+      </header>
+
+      <main>
+        <section class="grid grid-cols-2 gap-4">
+          <div class="h-full">
+            <h2 class="text-5xl">
+              We, at Digital & Design, help you make an informed decision by
+              recording, tracking and analysing key data related to your
+              business and help you move towards the right growth strategy.
+            </h2>
+          </div>
+          <div>
+            <Image src={img1} alt="img1" class="h-96 w-full object-fill" />
+          </div>
+        </section>
+
+        <section class="mt-24 grid grid-cols-2 gap-16">
+          <div>
+            <h3 class="text-3xl mb-4">Data Analytics</h3>
+            <p class="text-lg">
+              Most of the answers to growing your business lies in the data. Our
+              service ensures the data is properly analysed to maximise ROI and
+              increase the desirable results for your business to grow.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl mb-4">Research</h3>
+            <p class="text-lg">
+              The team at Digital & Design is fully equipped to carry out the
+              sufficient Market Research to explain key factors of the industry
+              and market to understand the consumer and what needs to be done to
+              improve the business.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl mb-4">Marketing Performance</h3>
+            <p class="text-lg">
+              Ensuring each Marketing decision performs at its optimal level, we
+              have placed key indicators that are studied throughout a Marketing
+              Campaign’s duration to ensure the best results from all Marketing
+              efforts for your brand.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl mb-4">Trends & Forecasting</h3>
+            <p class="text-lg">
+              TWe take data from your business, the industry and the market to
+              develop trends that will allow our team to create an entire
+              forecast for your business to set a benchmark upon.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </section>
+</MainLayout>

@@ -1,0 +1,94 @@
+---
+import { Image } from "astro:assets";
+import img1 from "../../../images/services/img1.png";
+import img2 from "../../../images/services/img2.jpg";
+import img3 from "../../../images/services/img3.jpg";
+import img4 from "../../../images/services/img4.jpg";
+import img5 from "../../../images/services/img5.jpg";
+import img6 from "../../../images/services/img6.png";
+import img7 from "../../../images/services/img7.jpg";
+import img8 from "../../../images/services/img8.jpg";
+import img9 from "../../../images/services/img9.jpg";
+import ImgContainer from "./ImgContainer.astro";
+---
+
+<section class="mt-24 text-white">
+  <header class="flex flex-col w-full items-center">
+    <div class="flex w-full gap-x-4 items-center justify-center">
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <h3 class="text-dd-grey text-3xl">Services</h3>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+    </div>
+    <h3 class="text-5xl mt-8 font-semibold">What We Have to Offer</h3>
+  </header>
+  <main class="flex flex-col gap-6 mt-8">
+    <section class="flex gap-6 w-full">
+      <ImgContainer src={img1} href="/services/business-analysis">
+        <p class="text-2xl font-semibold">Business Analysis</p>
+        <p class="text-lg">&#x2022 Data Analytics</p>
+        <p class="text-lg">&#x2022 Research</p>
+        <p class="text-lg">&#x2022 Marketing Performance</p>
+        <p class="text-lg">&#x2022 Trends & Forecasting</p>
+      </ImgContainer>
+      <ImgContainer src={img2} href="/services/content-creation">
+        <p class="text-2xl font-semibold">Content Creation</p>
+        <p class="text-lg">&#x2022 Copywriting</p>
+        <p class="text-lg">&#x2022 Blogs/Articles</p>
+        <p class="text-lg">&#x2022 Press Releases</p>
+        <p class="text-lg">&#x2022 Content Production</p>
+      </ImgContainer>
+
+      <ImgContainer src={img3} href="/services/creative">
+        <p class="text-2xl font-semibold">Creative</p>
+        <p class="text-lg">&#x2022 Brand Identity</p>
+        <p class="text-lg">&#x2022 Storyboarding</p>
+        <p class="text-lg">&#x2022 Campaign Designing</p>
+        <p class="text-lg">&#x2022 TVC/DVC Production</p>
+        <p class="text-lg">&#x2022 Photo/Video Production & Editing</p>
+        <p class="text-lg">&#x2022 Social Media Content Design</p>
+      </ImgContainer>
+    </section>
+
+    <ImgContainer src={img4} href="/services/digital-marketing">
+      <p class="text-2xl font-semibold">Digital Marketing</p>
+      <p class="text-lg">
+        &#x2022 Digital Advertising (Meta, TikTok, Google, Snapchat)
+      </p>
+      <p class="text-lg">&#x2022 SEO, SEM</p>
+      <p class="text-lg">&#x2022 Performance Marketing</p>
+      <p class="text-lg">&#x2022 Email Marketing</p>
+      <p class="text-lg">&#x2022 Online Store Management</p>
+    </ImgContainer>
+
+    <section class="flex gap-6 w-full">
+      <ImgContainer src={img5} href="/services/development">
+        <p class="text-2xl font-semibold">Development</p>
+        <p class="text-lg">&#x2022 Web Development</p>
+        <p class="text-lg">&#x2022 App Development</p>
+        <p class="text-lg">&#x2022 Loyalty Programs</p>
+        <p class="text-lg">&#x2022 Web 3.0</p>
+      </ImgContainer>
+      <ImgContainer src={img6} href="/services/affiliate-marketing">
+        <p class="text-2xl font-semibold">Affiliate Marketing</p>
+        <p class="text-lg">
+          &#x2022 Make use of affiliates all across the globe by promoting your
+          products through referral links.
+        </p>
+      </ImgContainer>
+    </section>
+
+    <!-- <section class="flex gap-4 w-full">
+      <ImgContainer src={img7}>
+        <p class="text-2xl font-semibold">Affiliate Marketing</p>
+      </ImgContainer>
+      <ImgContainer src={img8}>
+        <p class="text-2xl font-semibold">Affiliate Marketing</p>
+      </ImgContainer>
+      <ImgContainer src={img9}>
+        <p class="text-2xl font-semibold">Affiliate Marketing</p>
+      </ImgContainer>
+    </section> -->
+  </main>
+</section>

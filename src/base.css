@@ -1,0 +1,18 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+    .font-outline-0 {
+        -webkit-text-stroke: 0px white
+    }
+    
+    .font-outline-1 {
+        -webkit-text-stroke: 1px white;
+    }
+    
+}
+    
+  

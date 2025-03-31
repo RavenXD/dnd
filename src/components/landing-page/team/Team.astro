@@ -1,0 +1,19 @@
+---
+import TeamSlider from "../../react/TeamSlider";
+---
+
+<section class="mt-24 text-white">
+  <header class="flex flex-col w-full items-center">
+    <div class="flex w-full gap-x-4 items-center justify-center">
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <h3 class="text-dd-grey text-3xl">Our Team</h3>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+    </div>
+    <h3 class="text-5xl mt-8 font-semibold">Speak With One of Our Experts</h3>
+  </header>
+  <main class="mt-8">
+    <TeamSlider client:only="react" />
+  </main>
+</section>

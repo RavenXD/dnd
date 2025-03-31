@@ -1,0 +1,74 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import img1 from "../../images/services/img1.png";
+import { Image } from "astro:assets";
+---
+
+<MainLayout title="Business Analysis">
+  <div
+    class="bg-detail-img bg-no-repeat h-96 w-full absolute top-0 grayscale -z-40"
+  >
+    <div class="bg-black bg-opacity-80 w-full h-full"></div>
+  </div>
+  <section class="mx-16 min-[1600px]:ml-32 flex text-white">
+    <div class="mt-48 min-[1600px]:mt-72 gap-x-20">
+      <header class="flex flex-col w-full items-center mb-72">
+        <h2 class="text-5xl font-semibold">Content Creation</h2>
+      </header>
+
+      <main>
+        <section class="grid grid-cols-2 gap-4">
+          <div class="h-full">
+            <h2 class="text-5xl">
+              Content is becoming increasingly important in today’s world. Our
+              team ensures your content is optimised for keywords and algorithms
+              that helps your business rank better on all platforms.
+            </h2>
+          </div>
+          <div>
+            <Image src={img1} alt="img1" class="h-96 w-full object-fill" />
+          </div>
+        </section>
+
+        <section class="mt-24 grid grid-cols-2 gap-16">
+          <div>
+            <h3 class="text-3xl mb-4">Copywriting</h3>
+            <p class="text-lg">
+              The language and the words you choose are just as much of a
+              representation of the brand as the visuals. Our team understands
+              brand guidelines and the brand persona to create captivating
+              copies for all touchpoints that include, Social Media captions and
+              Website Headlines.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl mb-4">Blogs/Articles</h3>
+            <p class="text-lg">
+              Blogs/Articles and their regular updating on websites allows for
+              more opportunities of your business’ website to rank better. We
+              are capable of writing interesting articles with clickbait
+              headlines to ensure visitors on your websites.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl mb-4">Press Releases</h3>
+            <p class="text-lg">
+              Our team of content writers are also specialists in releasing
+              official statements, announcements and articles that can be
+              delivered on a large scale PR rollout for the use of public media
+              that ensures your brand’s message reaches loud and clear.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl mb-4">Content Production</h3>
+            <p class="text-lg">
+              Our team understands the algorithm of all platforms and is
+              equipped to produce content a lot of content so that your brand’s
+              communication always stays updated and fresh.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </section>
+</MainLayout>
