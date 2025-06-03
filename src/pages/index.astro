@@ -11,6 +11,7 @@ import Feedback from "../components/landing-page/Feedback.astro";
 import Team from "../components/landing-page/team/Team.astro";
 import LogoSlider from "../components/react/LogoSlider";
 import SocialSlider from "../components/react/SocialSlider";
+import Difference from "../components/landing-page/Difference.astro";
 ---
 
 <MainLayout>
@@ -78,11 +79,12 @@ import SocialSlider from "../components/react/SocialSlider";
     />
   </section>
 
+  <LogoSlider client:only="react" />
   <Skils />
   <Services />
   <Stats />
+  <Difference />
   <Portfolio />
-  <LogoSlider client:only="react" />
   <Feedback />
   <Team />
   <SocialSlider client:only="react" />

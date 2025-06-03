@@ -21,20 +21,47 @@ const skills = [
 ---
 
 <section
-  class="min-[1600px]:mx-56 mx-16 flex justify-between min-[1600px]:mt-16 mt-32 mb-32"
+  id="services"
+  class="min-[1600px]:mx-56 mx-16 min-[1600px]:mt-16 mt-32 mb-32"
 >
-  {
-    skills.map((skill) => (
-      <div class="card flex gap-x-3 ">
-        <div />
-        <Icon name={skill.icon} class="text-dd-primary" size={80} />
+  <header class="flex flex-col w-full items-center mb-16">
+    <div class="flex w-full gap-x-4 items-center justify-center">
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <h3 class="text-dd-grey text-3xl">Services</h3>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+    </div>
+    <h3 class="text-5xl mt-8 font-semibold text-white">Our Process Workflow</h3>
+  </header>
 
-        <div class="text-white w-72">
-          <h3 class="text-2xl font-semibold">{skill.title}</h3>
-          <p class="text-dd-grey mt-4">{skill.body}</p>
-        </div>
-      </div>
-    ))
-  }
-  <div id="services"></div>
+  <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
+    <div class="flex flex-col">
+      {
+        skills.map((skill, index) => (
+          <div class="flex items-start gap-6 relative">
+            {/* Numbered circle with connecting line */}
+            <div class="flex flex-col items-center flex-shrink-0">
+              <div class="w-12 h-12 rounded-full border-2 border-red-400  flex items-center justify-center z-10">
+                <span class="text-red-400 font-semibold text-sm">
+                  {(index + 1).toString().padStart(2, "0")}
+                </span>
+              </div>
+
+              {/* Dotted line (only show if not the last item) */}
+              {index < skills.length - 1 && (
+                <div class="w-0.5 h-20 border-l-2 border-dotted border-red-400 mt-4" />
+              )}
+            </div>
+
+            <div class="text-white pb-16">
+              <h3 class="text-2xl font-semibold">{skill.title}</h3>
+              <p class="text-dd-grey mt-4">{skill.body}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <div><img src="https://placehold.co/600x400" alt="" /></div>
+  </div>
 </section>
