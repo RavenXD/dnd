@@ -1,10 +1,19 @@
 ---
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+} from "lucide-astro";
 import FooterNav from "./FooterNav.astro";
 ---
 
 <footer class="text-dd-text-grey">
-  <section class="min-[1600px]:mx-32 mx-4 flex my-32">
-    <div class="flex basis-[60%] flex-col gap-10">
+  <section class="min-[1600px]:mx-32 mx-4 mt-20 mb-6 grid grid-cols-5">
+    <div class="flex col-span-2 flex-col gap-10">
       <div class="flex items-center gap-x-4">
         <img src="/logo.png" class="w-14" alt="logo" />
         <p class="text-dd-primary font-extrabold text-3xl">
@@ -17,35 +26,77 @@ import FooterNav from "./FooterNav.astro";
         Business Analytics solutions, we have the expertise to meet your needs
         and exceed your expectations.
       </p>
+      <div class="flex gap-x-4">
+        <div
+          class="size-10 bg-white rounded-full flex items-center justify-center"
+        >
+          <Facebook color="#000000" class="fill-current" stroke-width="0" />
+        </div>
+
+        <div
+          class="size-10 bg-white rounded-full flex items-center justify-center"
+        >
+          <Instagram color="#000000" />
+        </div>
+        <div
+          class="size-10 bg-white rounded-full flex items-center justify-center"
+        >
+          <Linkedin color="#000000" />
+        </div>
+        <div
+          class="size-10 bg-white rounded-full flex items-center justify-center"
+        >
+          <Twitter color="#000000" />
+        </div>
+      </div>
     </div>
-    <div class="flex basis-[40%] w-full">
-      <div class="flex flex-col basis-1/2 w-full">
-        <h3 class="text-2xl mb-10 text-white">Contact Us</h3>
-        <div class="flex flex-col gap-6">
+
+    <div class="flex flex-col">
+      <h3 class="text-2xl mb-6 text-white">Services</h3>
+      <div class="flex flex-col gap-2">
+        <p>Business Analysis</p>
+        <p>Content Creation</p>
+        <p>Creative UI/UX</p>
+        <p>Digital Marketing</p>
+        <p>Development</p>
+        <p>Affiliate Marketing</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <h3 class="text-2xl mb-6 text-white">Quick Links</h3>
+      <div class="flex flex-col gap-2">
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Portfolio</p>
+        <p>Blog</p>
+        <p>Services</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <div class="flex flex-col gap-6">
+        <div class="flex gap-4">
+          <MapPin size={84} class="text-dd-text-grey w-24" />
           <p>
             Office #174, 31 Redlake Drive, Postcode TA1 2RU, Taunton, United
             Kingdom
           </p>
+        </div>
+        <div class="flex gap-4">
+          <Phone size={24} class="text-dd-text-grey w-6 mr-6" />
           <p>Phone : +447553-400561</p>
+        </div>
+        <div class="flex gap-4">
+          <Mail size={24} class="text-dd-text-grey w-6 mr-6" />
           <p>Mail : info@example.com</p>
-          <p>Working Hours : 9:00am - 5:00pm</p>
         </div>
-      </div>
 
-      <div class="flex flex-col basis-1/2 w-full">
-        <h3 class="text-2xl mb-10 text-white">Services</h3>
-        <div class="flex flex-col gap-6">
-          <p>Business Analysis</p>
-          <p>Content Creation</p>
-          <p>Creative</p>
-          <p>Digital Marketing</p>
-          <p>Development</p>
-          <p>Affiliate Marketing</p>
-        </div>
+        <p>Working Hours : 9:00am - 5:00pm</p>
       </div>
     </div>
   </section>
   <section class="border-t-[1px] border-solid border-dd-grey">
-    <FooterNav />
+    <!-- <FooterNav /> -->
   </section>
 </footer>
