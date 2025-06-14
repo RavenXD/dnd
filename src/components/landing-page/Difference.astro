@@ -4,28 +4,28 @@ import { Lightbulb, Users, Settings, Crown, Award, Cog } from "lucide-astro";
 const timelineItems = [
   {
     icon: Lightbulb,
-    title: "Innovation First",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam",
+    title: "We Understand Your Vision",
+    text: "Every successful web project starts with deep discovery. We take time to understand your business goals, target audience, and competitive edge.",
   },
   {
     icon: Users,
-    title: "Team Work", 
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam",
+    title: "We Plan with Precision", 
+    text: " Using insights from discovery, we create a strategic roadmap, combining creative design thinking with data-driven planning for maximum impact.",
   },
   {
     icon: Cog,
-    title: "Process",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam",
+    title: "We Design for Users and Search",
+    text: " Our UX/UI experts craft visually engaging and SEO-friendly websites, striking a balance between user experience and technical structure for optimal performance.",
   },
   {
     icon: Crown,
-    title: "Premium Quality",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam",
+    title: "We Develop Scalable Web Solutions",
+    text: " From responsive websites to custom eCommerce platforms, our development ensures speed, security, and long-term scalability.",
   },
   {
     icon: Award,
-    title: "Proven Results",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam",
+    title: "We Support Your Growth",
+    text: "Post-launch, we optimize for results, offering ongoing SEO, analytics, and updates to ensure your digital presence continues to grow.",
   },
 ];
 
@@ -35,7 +35,7 @@ const STAGGER_OFFSET = 100;
 ---
 
 <div class="wrapper">
-  <h2>How are <span class="highlight">we different</span> ?</h2>
+  <h2 class="text-5xl mb-44 font-semibold text-white" >How are <span class="text-dd-primary">we different</span> ?</h2>
 
   <div class="timeline-container">
     <!-- Connection curves layer -->
@@ -73,7 +73,7 @@ const STAGGER_OFFSET = 100;
             return (
               <path
                 d={`M ${startX} ${startY} Q ${controlX} ${controlY} ${endX} ${endY}`}
-                stroke="#ef4444"
+                // stroke="#ef4444"
                 stroke-width="20"
                 fill="none"
                 stroke-linecap="round"
@@ -122,23 +122,15 @@ const STAGGER_OFFSET = 100;
   STAGGER_OFFSET: `${STAGGER_OFFSET}px`,
 }}>
   .wrapper {
-    font-family: system-ui, sans-serif;
+   
     padding: 4rem 1rem;
-    background-color: #fff;
+    background-color: #0000;
     text-align: center;
     overflow-x: auto;
     height: calc(var(--ICON_SIZE) + var(--STAGGER_OFFSET) + 700px);
   }
   
-  h2 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 8rem;
-  }
-  
-  h2 .highlight {
-    color: #ef4444;
-  }
+ 
 
   .timeline-container {
     position: relative;
@@ -179,11 +171,11 @@ const STAGGER_OFFSET = 100;
     width: calc(var(--ICON_SIZE) + 16px);
     height: calc(var(--ICON_SIZE) + 16px);;
     border-radius: 50%;
-    background-color: #ef4444;
+    background-color: #DD4242;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+    /* box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3); */
     position: relative;
     z-index: 3;
   }
@@ -192,7 +184,7 @@ const STAGGER_OFFSET = 100;
     width: calc(var(--ICON_SIZE) - 16px);
     height: calc(var(--ICON_SIZE) - 16px);
     border-radius: 50%;
-    background-color: #1f2937;
+    background-color: #111319;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,7 +206,7 @@ const STAGGER_OFFSET = 100;
     transform: translateX(-50%);
     width: 4px;
     height: 46px; 
-    background-color: #ef4444;
+    background-color: #DD4242;
     border-radius: 18px;
     z-index: auto;
   }
@@ -237,14 +229,14 @@ const STAGGER_OFFSET = 100;
 
   .text-block h3 {
     font-weight: 700;
-    color: #ef4444;
+    color: #DD4242;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
   }
   
   .text-block p {
     font-size: 0.875rem;
-    color: #4b5563;
+    color: #fff;
     line-height: 1.4;
   }
 </style>

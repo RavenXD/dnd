@@ -20,7 +20,7 @@ import KlaviyoForm from "../components/KlaviyoForm.astro";
     class="ml-16 min-[1600px]:ml-32 flex h-screen relative overflow-hidden"
   >
     <div class="flex flex-1 mt-48 min-[1600px]:mt-72 gap-x-20">
-      <div class="social-icons flex flex-col gap-16">
+      <!-- <div class="social-icons flex flex-col gap-16">
         <Icon
           name="basil:facebook-outline"
           class="text-dd-grey hover:text-dd-primary"
@@ -41,44 +41,52 @@ import KlaviyoForm from "../components/KlaviyoForm.astro";
           class="text-dd-grey hover:text-dd-primary"
           size={40}
         />
-      </div>
+      </div> -->
       <div class="hero-text-header flex flex-col gap-2">
-        <div class="flex gap-x-4 items-center">
+        <!-- <div class="flex gap-x-4 items-center">
           <div class="w-10 h-[2px] bg-dd-grey"></div>
           <div class="size-3 rounded-full bg-dd-primary"></div>
           <h3 class="text-dd-grey text-3xl">Innovative Ideas</h3>
-        </div>
-        <div class="hero-text-body mt-5 max-w-xl">
-          <div class="text-5xl text-white font-semibold">
-            <h1>
-              Think. Create. <span class="text-dd-primary">Execute.</span>
+        </div> -->
+        <div class="hero-text-body mt-5 max-w-2xl">
+          <div class="text-5xl text-white font-semibold flex flex-col gap-4">
+            <h1>Your Route to</h1>
+            <h1 class="flex items-baseline">
+              <p>
+                <span class="text-dd-primary pr-4">Digital Success,</span>We
+                Grow
+              </p>
             </h1>
-            <h1 class="flex flex-col items-baseline mt-2">
-              We Are With You
-              <span class="text-dd-primary pr-4">At Every Step</span>
-            </h1>
+            <h1>Brands Online</h1>
           </div>
           <p class="text-dd-text-grey mt-14">
-            We provide a wide range of services that will take your business to
-            the next level in the digital landscape. From Social Media to
-            Business Analytics, and everything in between, we've got you
-            covered.
+            Struggling to grow your brand online? Digital and Design creates
+            custom websites and targeted digital marketing strategies that solve
+            your business challenges and drive real results. We partner with you
+            to deliver solutions that align with your goals and boost your
+            online success.
           </p>
         </div>
         <div class="hero-text-footer mt-16 flex gap-x-2 items-center">
-          <div class="w-10 h-[2px] bg-dd-text-grey"></div>
-          <div class="bg-white size-2 rounded-full ml-3"></div>
-          <p class="text-white hover:text-dd-primary">Get Started</p>
+          <a href="">
+            <div class="px-10 py-4 bg-dd-primary">
+              <p class="text-white">Start Your Project</p>
+            </div>
+          </a>
         </div>
+
+        <!-- <div class="w-10 h-[2px] bg-dd-text-grey"></div>
+        <div class="bg-white size-2 rounded-full ml-3"></div>
+        <p class="text-white hover:text-dd-primary">Get Started</p> -->
       </div>
     </div>
-    <div class="flex-1"></div>
-    <Image
-      src={hero}
-      alt="hero image"
-      class="absolute -z-10 top-0 right-0 w-3/5 animate-img-bounce"
-    />
   </section>
+  <div class="flex-1"></div>
+  <Image
+    src={hero}
+    alt="hero image"
+    class="absolute -z-10 top-0 right-0 w-3/5 animate-img-bounce"
+  />
 
   <LogoSlider client:only="react" />
   <Skils />
